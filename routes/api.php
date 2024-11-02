@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\AiController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/ask', [AiController::class, 'ask']);
+Route::middleware(['throttle:ai-requests'])
+    ->post('/ask', [App\Http\Controllers\AiController::class, 'ask']);
