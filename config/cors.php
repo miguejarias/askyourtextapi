@@ -19,7 +19,10 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['chrome-extension://ofjeempfoajkhnfpkijeomcmdodpifko'],
+    'allowed_origins' => [
+        'chrome-extension://ofjeempfoajkhnfpkijeomcmdodpifko',
+        'chrome-extension://ogkfjahhlmjplbokceggjeefgemapeem',
+    ],
 
     'allowed_origins_patterns' => [],
 
